@@ -1,0 +1,96 @@
+body {
+    font-family: 'inter', sans-serif;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: white; 
+    margin-top: 16px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 12%);
+    width: 340px;
+    height: 520px;
+    border-radius: 3%;
+}
+
+.mainContainer .avatar {
+    border-radius: 50%;
+    width: 5rem;
+    margin: 26px auto;
+}
+
+.mainContainer p {
+    font-size: 12px;
+}
+
+.mainContainer .country {
+    color: #FFEB3B;
+    font-weight: bold;
+}
+
+.mainContainer .name {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.mainContainer .profession {
+    color: lightgrey
+}
+
+.mainContainer .btnContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btnContainer a {
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    padding: 10px 85px;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    margin: 0.5rem 0.5rem;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-weight: bold; 
+}
+
+.btnContainer a:hover {
+    background-color: #FFEB3B;
+    color: hsl(0, 0%, 20%);
+}
+
+@media only screen and (max-width: 375px) {
+    .mainContainer .profession {
+        font-size: 14px;
+    }
+
+    .mainContainer .country {
+        font-size: 14px;
+    }
+
+    .mainContainer .name {
+        font-size: 25px;
+    }
+
+    .mainContainer {
+        width: 310px;
+    }
+}
+
+
